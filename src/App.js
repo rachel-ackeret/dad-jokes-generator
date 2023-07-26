@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import JokeGenerator from './components/JokeGenerator';
 
 function App() {
+  const [showWelcomeScreen, setShowWelcomeScreen] = useState(true);
+
+  const startJokes = () => {
+    setShowWelcomeScreen(false);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {showWelcomeScreen ? (
+        <header className="App-header">
+          <span className="pb-5">Let's make some Dad Jokes!</span>
+        <button className="btn btn-primary py-2 px-4 rounded-md p bg-blue-400 text-color-white" onClick={startJokes}>
+          I'm in!
+        </button>
+        </header>
+      ) : (
+        <JokeGenerator />
+      )
+    }
     </div>
   );
 }
