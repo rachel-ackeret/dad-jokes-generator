@@ -28,6 +28,15 @@
   color: white;
 }
 
+.jokeBox {
+  height: 200px;
+width: 200px;
+background-color: white;
+color: black;
+padding: 10px;
+border: solid 3px black;
+}
+
 .App-link {
   color: #61dafb;
 }
