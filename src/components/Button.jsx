@@ -3,7 +3,7 @@ import "./styles.css";
 
 const Button = (props) => {
 	return <button onClick={props.callApi}>
-		Show Me A Joke
+		<div className="text-white">Show Me A Joke</div>
 	</button>;
 }
 
