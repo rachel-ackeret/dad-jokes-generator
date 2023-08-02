@@ -47,7 +47,7 @@ const JokeWriter = ({ content, speed }) => {
     }, [content]);
 
     return (
-        <p className="joke">{typedContent !== "" ? typedContent : ''}</p>
+        <p className="joke">{typedContent}</p>
     )
 }
 
