@@ -35,6 +35,7 @@ const JokeWriter = ({ content, speed }) => {
             }, speed);
             setIntervalId(animKey);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [joke]);
 
     useEffect(() => {
@@ -44,6 +45,7 @@ const JokeWriter = ({ content, speed }) => {
             if (index !== 0) setIndex(0);
             if (typedContent !== "") setTypedContent("");
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [content]);
 
     return (
