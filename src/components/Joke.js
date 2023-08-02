@@ -11,9 +11,7 @@ const Joke = () => {
 			.then((res) => res.json())
 			.then((data) => setJoke(data.joke));
 	};
-	console.log(
-		'joke', joke
-	)
+
 	return (
 		<>
 			<div className="joke-box">
