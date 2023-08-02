@@ -11,15 +11,13 @@ const Joke = () => {
 			.then((res) => res.json())
 			.then((data) => setJoke(data.joke));
 	};
-
+	console.log(
+		'joke', joke
+	)
 	return (
 		<>
 			<div className="joke-box">
-				{joke ? 
-					<div className="joke-container">
-						<JokeWriter content={joke} speed={35} /> 
-					</div>
-				: null}
+				<JokeWriter content={joke} speed={35} /> 
 			</div>
 			<Button callApi={fetchJoke} />
 		</>

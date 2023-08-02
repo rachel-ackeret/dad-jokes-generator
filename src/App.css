@@ -27,12 +27,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.joke-container {
-  padding: 25px;
-  margin: 45px auto;
   text-align: left;
+  padding: 25px;
 }
 
 .joke {
